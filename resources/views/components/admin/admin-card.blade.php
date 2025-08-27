@@ -1,0 +1,1 @@
+<h5 class="text-danger m-2">Este é o conteúdo do componente da subpasta admin</h5>

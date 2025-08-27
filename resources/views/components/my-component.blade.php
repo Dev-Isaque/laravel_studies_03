@@ -1,0 +1,1 @@
+<h3 class="text-info m-2">Este é o conteúdo do componente</h3>
