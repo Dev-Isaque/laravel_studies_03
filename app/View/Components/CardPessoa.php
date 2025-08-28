@@ -29,4 +29,16 @@ class CardPessoa extends Component
     {
         return view('components.card-pessoa');
     }
+
+    public function shouldRender(): bool
+    {
+        // Só redenriza o componente se a pessoa fala mais de uma lingua
+        return count($this->linguas) > 1;
+    }
+
+    public function colorName(): bool
+    {
+        // Se a pessoa for a Duda, destaca o nome
+        return $this->pessoa === 'Duda';
+    }
 }
