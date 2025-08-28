@@ -55,7 +55,7 @@
 
     {{-- Multis Slots --}}
 
-    <x-multi-slot>
+    {{--  <x-multi-slot>
 
         <x-slot:title> Este é o titulo </x-slot>
 
@@ -69,6 +69,21 @@
             </ul>
         </x-slot>
 
-    </x-multi-slot>
+    </x-multi-slot> --}}
+
+    {{-- Componentes Anônimos --}}
+
+    <h4>Componente anónimo</h4>
+    <x-alert-card>
+        Primeira mensagem
+    </x-alert-card>
+
+    <x-alert-card>
+        Segunda mensagem
+    </x-alert-card>
+
+    <x-alert-card>
+        Terceira mensagem
+    </x-alert-card>
 
 @endsection
