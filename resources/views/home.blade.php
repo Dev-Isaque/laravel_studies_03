@@ -43,7 +43,7 @@
     </div>
  --}}
     {{-- Componentes e Slots --}}
-    <div class="row m-5">
+    {{--   <div class="row m-5">
         <div class="col">
             <h4 class="text-info"> Como funciona um Slot?</h4>
 
@@ -51,6 +51,24 @@
                 <h1 class="text-danger">Este é o Slot!</h1>
             </x-other-card>
         </div>
-    </div>
+    </div> --}}
+
+    {{-- Multis Slots --}}
+
+    <x-multi-slot>
+
+        <x-slot:title> Este é o titulo </x-slot>
+
+        <x-slot:content> Este é o conteúdo </x-slot>
+
+        <x-slot:footer> 
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+            </ul>
+        </x-slot>
+
+    </x-multi-slot>
 
 @endsection
