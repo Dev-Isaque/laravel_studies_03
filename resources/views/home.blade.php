@@ -20,11 +20,18 @@
     <p>{{ $myName }}</p> --}}
 
     {{-- Componentes --}}
-    <div class="text-center mt-5">
+    {{-- <div class="text-center mt-5">
         @foreach ($pessoas_linguas as $pessoa => $linguas)
 
         <x-card-pessoa :nome-pessoa="$pessoa" :linguas-pessoa="$linguas" />
 
+        @endforeach
+    </div> --}}
+
+    {{-- Short Attribute Syntax --}}
+    <div class="text-center mt-5">
+        @foreach ($pessoas_linguas as $pessoa => $linguas)
+            <x-card-pessoa :$pessoa :$linguas />
         @endforeach
     </div>
 
