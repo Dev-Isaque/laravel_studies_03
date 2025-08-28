@@ -36,10 +36,21 @@
     </div> --}}
 
     {{-- Metodos de Componentes --}}
-    <div class="text-center mt-5">
+    {{-- <div class="text-center mt-5">
         @foreach ($pessoas_linguas as $pessoa => $linguas)
             <x-card-pessoa :$pessoa :$linguas />
         @endforeach
+    </div>
+ --}}
+    {{-- Componentes e Slots --}}
+    <div class="row m-5">
+        <div class="col">
+            <h4 class="text-info"> Como funciona um Slot?</h4>
+
+            <x-other-card>
+                <h1 class="text-danger">Este é o Slot!</h1>
+            </x-other-card>
+        </div>
     </div>
 
 @endsection
